@@ -51,7 +51,7 @@ def plot(inputs, outputs, actual):
     ax1.plot(inputs, actual, 'b-')
     ax1.plot(inputs, outputs, 'r.')
     matplotlib.pyplot.draw()
-    
+    matplotlib.pyplot.show()
     
 
 class NN:
@@ -224,8 +224,6 @@ def demoRegression():
     #Plot the function.
     try:
         plot(inputs, outputs, actual)
-        print("Press a key to quit.")
-        value = raw_input()
     except:
         print("Must have matplotlib to plot.")
 
